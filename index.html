@@ -18,7 +18,7 @@
         <section class="intro-container hidden">
             <div class="intro-info-left">
                 <h1 class="main-heading">Digital Collections Kiosk Interactive Title Text</h1>
-                <hr>
+                <hr class="hr">
                 <p class="left-info">
                     Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
                     adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
@@ -34,34 +34,72 @@
                 </p>
 
                 <div class="climate-info-left">
-                    <p class="climate-editable" contenteditable="true">
+                    <p class="climate-editable hidden" contenteditable="true">
                         The quick polar bear turns brown and jumps over a melting glacier with a lazy fox
                     </p>
+                    <p class='gerry-info-left hidden'>
+                        Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.
+                    </p>
                     <div class="climate-controls controls">
-                        <div>
-                            <input class="climate-size-slider" type="range" max="100" min="2" value="10">
-                            <input class="climate-weight-slider" type="range" max="2040" min="1979" value="1979">
+                        <div class="display-flex">
+                            <div class="controls-container" style="margin-right: 20px;">
+                                <div class="display-flex"><p>Font Size:</p><span class="edits climate-font-size">48px</span></div>
+                                <div class="display-flex">
+                                    <button class="climate-size-subtract-btn slider-btn">-</button>
+                                    <input class="climate-size-slider" type="range" max="100" min="2" value="48">
+                                    <button class="climate-size-add-btn add-btn slider-btn">+</button>
+                                </div>
+                            </div>
+
+                            <div class="controls-container">
+                                <div class="display-flex"><p>Year:</p> <span class="edits climate-year-size">1979</span></div>
+                                <div>
+                                    <button class="climate-weight-subtract-btn slider-btn">-</button>
+                                    <input class="climate-weight-slider" type="range" max="2040" min="1979" value="1979">
+                                    <button class="climate-weight-add-btn add-btn slider-btn">+</button>
+                                </div>
+                            </div>
+                            
+
+                            
                         </div>
 
-                        <button value="gerry" class="card-btn">Explore Ugly Gerry</button>
+                        <button value="gerry" class="card-btn">Explore Ugly Gerry &gt;</button>
                     </div>
 
                     <div class="gerry-controls controls">
                         <div>
-                            <input class="gerry-size-slider" type="range" max="100" min="2" value="10">
-                            <input class="gerry-weight-slider" type="range" max="2040" min="1979" value="1979">
+                            <div class="display-flex">
+                                <button class="subtract-btn slider-btn">-</button>
+                                <input class="gerry-size-slider" type="range" max="100" min="2" value="10">
+                                <button class="add-btn slider-btn">+</button>
+                            </div>
+
                         </div>
 
-                        <button value="climate" class="card-btn">Explore Climate Crisis</button>
+                        <button value="climate" class="card-btn">Explore Climate Crisis &gt;</button>
                     </div>
                 </div>
+
+                
 
             </div>
 
 
             <div class="card-container">
                 <div class="card climate-card">
-                    <img class="card-img" src="./assets/climate-img.jpg">
+                    <div class="carousel-controls hidden">
+                        <span class="arrow">&lt;</span>
+                        <div class="circle big"></div>
+                        <div class="circle"></div>
+                        <span class="arrow climate-right">&gt;</span>
+                    </div>
+                    <img class="card-img climate-img" src="./assets/climate-img.jpg">
+                    <div class="red-btn hidden">Pollute</div>
                     <div class="card-info">
                         <div class="initial-info-container">
                             <div>
@@ -74,14 +112,54 @@
                                     <h2>Helsingin Sanomat</h2>
                                 </div>
                             </div>
-                            <button value="climate" class="card-btn">Explore Climate Crisis</button>
+                            <button value="climate" class="card-btn">Explore Climate Crisis &gt;</button>
 
+                        </div>
+                        <div class="second-info-container hidden">
+                            <h2>Climate Crisis Typeface</h2>
+                            <h3>Designed by: Helsingin Sanomat</h3>
+                            <p>
+                                Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.
+                            </p>
                         </div>
 
                     </div>
                 </div>
                 <div class="card gerry-card">
-                    <img class="card-img" src="./assets/gerry-img.png">
+                    <img class="card-img gerry-img" src="./assets/gerry-img.png">
+                    <div class="keyboard hidden">
+                        <button class="keyboard-btn" value="a">a</button>
+                        <button class="keyboard-btn" value="b">b</button>
+                        <button class="keyboard-btn" value="c">c</button>
+                        <button class="keyboard-btn" value="d">d</button>
+                        <button class="keyboard-btn" value="e">e</button>
+                        <button class="keyboard-btn" value="f">f</button>
+                        <button class="keyboard-btn" value="g">g</button>
+                        <button class="keyboard-btn" value="h">h</button>
+                        <button class="keyboard-btn" value="i">i</button>
+                        <button class="keyboard-btn" value="j">j</button>
+                        <button class="keyboard-btn" value="k">k</button>
+                        <button class="keyboard-btn" value="l">l</button>
+                        <button class="keyboard-btn" value="m">m</button>
+                        <button class="keyboard-btn" value="n">n</button>
+                        <button class="keyboard-btn" value="o">o</button>
+                        <button class="keyboard-btn" value="p">p</button>
+                        <button class="keyboard-btn" value="q">q</button>
+                        <button class="keyboard-btn" value="r">r</button>
+                        <button class="keyboard-btn" value="s">s</button>
+                        <button class="keyboard-btn" value="t">t</button>
+                        <button class="keyboard-btn" value="u">u</button>
+                        <button class="keyboard-btn" value="v">v</button>
+                        <button class="keyboard-btn" value="w">w</button>
+                        <button class="keyboard-btn" value="x">x</button>
+                        <button class="keyboard-btn" value="y">y</button>
+                        <button class="keyboard-btn" value="z">z</button>
+                        <button class="keyboard-btn clear-btn" value="clear">Clear</button>
+                    </div>
                     <div class="card-info">
                         <div class="initial-info-container">
                             <div>
@@ -94,12 +172,20 @@
                                     <h2>Ben Doessel and James Lee</h2>
                                 </div>
                             </div>
-                            <button value="gerry" class="card-btn">Explore Ugly Gerry</button>
+                            <button value="gerry" class="card-btn">Explore Ugly Gerry &gt;</button>
 
                         </div>
 
-                        <div class="">
-
+                        <div class="second-info-container hidden">
+                            <h2>Ugly Gerry Typeface</h2>
+                            <h3>Designed by: Ben Doessel and James Lee</h3>
+                            <p>
+                                Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.Lorem sed risus ultricies tristique. Ut aliquam purus sit amet luctus venenatis lectus magna. Sed
+                                adipiscing diam donec adipiscing tristique. Et malesuada fames ac turpis egestas. Scelerisque eu
+                                ultrices vitae auctor.
+                            </p>
                         </div>
 
 
@@ -115,9 +201,10 @@
 
     <footer>
 
+        <img src="./assets/home-icon-white.png" class="home-btn home-footer hidden">
         <h4 class="white-font intro-footer">Recent Digital Acquistions - Typeface Interactive</h4>
         <button class="explore-btn intro-footer">Tap To Explore</button>
-        <img src="./assets/home-icon-white.png" class="home-btn home-footer hidden">
+        
         <button class="video-tour-btn home-footer hidden">Video Tour <i class="fa-solid fa-play" style="color: #000000;"></i></button>
 
     </footer>
