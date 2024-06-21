@@ -44,7 +44,7 @@ keyBoardBtn.forEach(function(btn) {
 
 clearBtn.addEventListener('click', function() {
     letterContainer.classList.add('hidden')
-        gerryInfoLeft.classList.remove('hidden')
+    gerryInfoLeft.classList.remove('hidden')
 })
 
 climateRight.addEventListener('click', function() {
@@ -139,6 +139,7 @@ climateSizeSlider.addEventListener('input', function() {
 })
 
 homeBtn.addEventListener('click', function() {
+    letterContainer.classList.add('hidden')
     whiteFont.classList.add('hidden')
     mainHeading.classList.remove("hidden")
     climateCard.classList.remove('full-height');
