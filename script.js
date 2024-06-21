@@ -31,6 +31,21 @@ let keyboard = document.querySelector('.keyboard')
 let gerryInfoLeft = document.querySelector('.gerry-info-left')
 let gerryFontSizeSlider = document.querySelector('.gerry-size-slider')
 let gerryFontSize = document.querySelector('.gerry-font-size')
+let keyBoardBtn = document.querySelectorAll('.keyboard-btn')
+let letterContainer = document.querySelector('.letter-container')
+let clearBtn = document.querySelector('.clear-btn')
+
+keyBoardBtn.forEach(function(btn) {
+    btn.addEventListener('click', function(){ 
+        letterContainer.classList.remove('hidden')
+        gerryInfoLeft.classList.add('hidden')
+    })
+})
+
+clearBtn.addEventListener('click', function() {
+    letterContainer.classList.add('hidden')
+        gerryInfoLeft.classList.remove('hidden')
+})
 
 climateRight.addEventListener('click', function() {
     climateImg.classList.add('hidden')
@@ -69,6 +84,7 @@ cardBtn.forEach(function(btn) {
         cardContainer.classList.add('no-gap')
         introContainer.classList.add('new-grid')
         introInfoLeft.classList.add('expand')
+        mainHeading.innerHTML = "Edit the text below"
         if (this.value == 'gerry') {
             gerryInfoLeft.classList.remove('hidden')
             climateEditable.classList.add('hidden')
@@ -78,7 +94,7 @@ cardBtn.forEach(function(btn) {
             climateCard.classList.add('hidden');
             climateCard.classList.remove('full-height');
             gerryCard.classList.remove('hidden');
-            // mainHeading.innerHTML = "Ugly Gerry Typeface"
+            
             whiteFont.classList.remove('hidden')
             whiteFont.innerHTML = "Ugly Gerry Typeface"
             gerryControls.classList.remove('hidden')
@@ -100,7 +116,7 @@ cardBtn.forEach(function(btn) {
         }
         climateInfoLeft.style.display = "flex"
         leftInfo.classList.add('hidden')
-        mainHeading.classList.add("hidden")
+        // mainHeading.classList.add("hidden")
     })
 })
 
