@@ -171,7 +171,7 @@ font-family: "Climate Crisis", sans-serif;
     "YEAR" 1979;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 500px;
+    max-height: 450px;
     color: rgb(0, 131, 246);
 }
 
@@ -251,7 +251,7 @@ font-family: "Climate Crisis", sans-serif;
     line-height: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 500px;
+    max-height: 450px;
 }
 
 .letter-container {
