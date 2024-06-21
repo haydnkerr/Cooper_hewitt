@@ -29,6 +29,8 @@ let climateImg = document.querySelector('.climate-img')
 let gerryImg = document.querySelector('.gerry-img')
 let keyboard = document.querySelector('.keyboard')
 let gerryInfoLeft = document.querySelector('.gerry-info-left')
+let gerryFontSizeSlider = document.querySelector('.gerry-size-slider')
+let gerryFontSize = document.querySelector('.gerry-font-size')
 
 climateRight.addEventListener('click', function() {
     climateImg.classList.add('hidden')
@@ -100,6 +102,12 @@ cardBtn.forEach(function(btn) {
         leftInfo.classList.add('hidden')
         mainHeading.classList.add("hidden")
     })
+})
+
+gerryFontSizeSlider.addEventListener('input', function() {
+    let val = gerryFontSizeSlider.value
+    gerryInfoLeft.style.fontSize = val + "px"
+    gerryFontSize.innerHTML = gerryFontSizeSlider.value
 })
 
 climateWeightSlider.addEventListener('input', function() {

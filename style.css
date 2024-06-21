@@ -246,7 +246,13 @@ font-family: "Climate Crisis", sans-serif;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 300px;
 }
-
+.gerry-info-left {
+    font-size: 2rem;
+    line-height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 500px;
+}
 .keyboard-btn {
 
     background: rgb(178, 178, 178);
